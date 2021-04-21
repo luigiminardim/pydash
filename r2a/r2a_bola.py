@@ -39,9 +39,10 @@ class R2A_Bola(IR2A):
     def handle_segment_size_request(self, msg):
         msg.add_quality_id(self.qualities[0])
         selectedQuality = self.qualities[0]
+        print("AMOUNT OF VIDEO TO PLAY", Whiteboard.get_instance().get_amount_video_to_play())
         print("PLAYBACK BUFFER SIZE", len(Whiteboard.get_instance().get_playback_buffer_size()))
         print("BUFFER", Whiteboard.get_instance().get_buffer())
-        bufferSize = len(Whiteboard.get_instance().get_buffer())
+        bufferSize = Whiteboard.get_instance().get_amount_video_to_play()
         maxPhi = -math.inf;
         print("BUFFER SIZE", bufferSize)
         for quality in self.qualities:
