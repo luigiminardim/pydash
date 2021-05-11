@@ -1,4 +1,7 @@
-# Trabalho feito por
+# Trabalho feito por:
+# Luigi Minardi Ferreira Maia 17/0017141
+# Gabriel Cunha Bessa Vieira 16/0120811
+
 from r2a.ir2a import IR2A
 import math
 from player.parser import *
