@@ -1,3 +1,5 @@
+# Trabalho feito por
+from r2a.ir2a import IR2A
 import math
 from player.parser import *
 import time
